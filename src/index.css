@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-style {
+  @apply duration-500
+}
+.ancor-style{
+  @apply hover:text-[#5177FF] duration-500 text-[16px]
+}
+
