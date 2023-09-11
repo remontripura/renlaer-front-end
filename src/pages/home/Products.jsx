@@ -11,7 +11,7 @@ const Products = () => {
                 <p>Flexible selection according to business needs</p>
             </div>
             <div className="grid md:grid-cols-3 gap-10 mt-5">
-                <div className="p-5 bg-white space-y-10 rounded hover:shadow-md shadow-slate-300 relative h-[600px]">
+                <div className="p-5 bg-white space-y-5 rounded hover:shadow-md shadow-slate-300 relative h-[450px]">
                     <div className="p-3 bg-[#4A5BFF] w-16 h-16 flex justify-center items-center rounded-full">
                         <FaHome className="text-3xl text-white" />
                     </div>
@@ -36,7 +36,7 @@ const Products = () => {
                         <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">View Now</button>
                     </div>
                 </div>
-                <div className="p-5  bg-white space-y-10 rounded hover:shadow-md shadow-slate-300 relative h-[600px]">
+                <div className="p-5  bg-white space-y-5 rounded hover:shadow-md shadow-slate-300 relative h-[450px]">
                     <div className="p-3 bg-[#4A5BFF] w-16 h-16 flex justify-center items-center rounded-full">
                         <FaFileImage className="text-3xl text-white" />
                     </div>
@@ -61,7 +61,7 @@ const Products = () => {
                         <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">View Now</button>
                     </div>
                 </div>
-                <div className="p-5  bg-white space-y-10 rounded hover:shadow-md shadow-slate-300 relative h-[600px]">
+                <div className="p-5  bg-white space-y-5 rounded hover:shadow-md shadow-slate-300 relative h-[450px]">
                     <div className="p-3 bg-[#4A5BFF] w-16 h-16 flex justify-center items-center rounded-full">
                         <MdWifiFind className="text-3xl text-white" />
                     </div>
