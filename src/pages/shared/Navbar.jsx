@@ -12,7 +12,6 @@ const Navbar = () => {
   const [isIconOpen, setIsIconOpen] = useState(false);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-    
   };
   const rotateIcon = () => {
     setIsIconOpen(!isIconOpen);
@@ -24,23 +23,20 @@ const Navbar = () => {
           Home
         </Link>
       </li>
-      <li className="group opacity-100 flex items-center gap-2" onClick={toggleDropdown}>
-        <span className="hidden lg:flex">
-          Products
-        </span>
+      <li
+        className="group opacity-100 flex items-center gap-2"
+        onClick={toggleDropdown}
+      >
+        <span className="hidden lg:flex">Products</span>
         <div
           onClick={rotateIcon}
           className="flex justify-center items-center gap-2 lg:hidden group"
         >
           Product
           {isIconOpen ? (
-            <FaAngleDown
-              className="text-[20px]"
-            />
+            <FaAngleDown className="text-[20px]" />
           ) : (
-            <FaAngleUp
-              className="text-[20px]"
-            />
+            <FaAngleUp className="text-[20px]" />
           )}
         </div>
         <div className="absolute group left-80 invisible lg:group-hover:visible opacity-100 top-20">
@@ -74,13 +70,13 @@ const Navbar = () => {
         </Link>
       </li>
       <li className="">
-        <Link className="ancor-style" to="/about">
+        <Link className="ancor-style" to="/aboutUs">
           about Us
         </Link>
       </li>
 
       <li className="">
-        <Link className="ancor-style" to="/help">
+        <Link className="ancor-style" to="/contactUs">
           Contact Us
         </Link>
       </li>
@@ -94,7 +90,7 @@ const Navbar = () => {
 
   return (
     <div className=" bg-[#131947] relative">
-      <div className="lg:max-w-7xl mx-auto text-white flex justify-between items-center px-4 py-3">
+      <div className="lg:max-w-7xl mx-auto flex justify-between items-center px-4 text-white py-5">
         <div className="">
           <Link to="/">
             <img className="w-24" src={logo} alt="" />
