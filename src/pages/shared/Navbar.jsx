@@ -25,6 +25,76 @@ const Navbar = () => {
       </li>
       <li
         className="group opacity-100 flex items-center gap-2"
+      >
+        <span className="hidden lg:flex">Products</span>
+        <div
+          onClick={rotateIcon}
+          className="flex justify-center items-center gap-2 lg:hidden group"
+        >
+          Product
+          {isIconOpen ? (
+            <FaAngleDown className="text-[20px]" />
+          ) : (
+            <FaAngleUp className="text-[20px]" />
+          )}
+        </div>
+        <div className="absolute group left-80 invisible lg:group-hover:visible opacity-100 top-20">
+          <div className="w-6 h-6 bg-white rotate-45 absolute -top-3 left-48"></div>
+          <ul className="lg:grid grid-cols-3 max-w-[700px] p-8 gap-10 relative bg-white text-black">
+            {dropdown.map((data) => (
+              <li className="shadow-md shadow-slate-300 p-3">
+                <p className="font-bold">{data.title}</p>
+                <p>{data.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <FaAngleDown className="text-[20px] hidden lg:flex lg:group-hover:rotate-180 duration-500" />
+      </li>
+      {isOpen && (
+        <div className="opacity-100">
+          <ul className="lg:flex flex-col gap-10 relative bg-white text-black">
+            {dropdown.map((data) => (
+              <li className="shadow-md shadow-slate-300 p-3">
+                <p className="font-bold">{data.title}</p>
+                <p>{data.description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <li className="">
+        <Link to="/product" className="list-style">
+          Scenario
+        </Link>
+      </li>
+      <li className="">
+        <Link className="ancor-style" to="/aboutUs">
+          about Us
+        </Link>
+      </li>
+
+      <li className="">
+        <Link className="ancor-style" to="/contactUs">
+          Contact Us
+        </Link>
+      </li>
+      <li className="">
+        <Link className="ancor-style" to="/service">
+          Help Center
+        </Link>
+      </li>
+    </>
+  );
+  const dropdownItem = (
+    <>
+      <li className="list-style">
+        <Link className="ancor-style" to="/">
+          Home
+        </Link>
+      </li>
+      <li
+        className="group opacity-100 flex items-center gap-2"
         onClick={toggleDropdown}
       >
         <span className="hidden lg:flex">Products</span>
@@ -125,7 +195,7 @@ const Navbar = () => {
             } absolute  text-black right-0 bg-green-500 top-8 w-[300px] z-50`}
           >
             <ul className="lg:hidden flex flex-col justify-center items-center gap-8 w-full py-5">
-              {navItem}
+              {dropdownItem}
             </ul>
           </div>
         </div>
