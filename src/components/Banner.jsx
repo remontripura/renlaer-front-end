@@ -4,15 +4,16 @@ import img from "../assets/image/banner.svg";
 const Banner = ({ title }) => {
   return (
     <div
-      className="flex justify-center items-center"
+      className="relative"
       style={{
         backgroundImage: `url('${img}')`,
-        height: "300px",
-        backgroundPosition: "cover",
+        height: "350px",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
       }}
     >
-      <h2 className="text-white text-center font-bold text-5xl italic pb-3 border-b-4 border-white">{title}</h2>
+      <h2 className="text-white w-72 text-center font-bold text-3xl italic pb-3 absolute right-0 left-0 mx-auto top-[185px]">{title}</h2>
     </div>
   );
 };
