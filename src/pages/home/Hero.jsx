@@ -15,7 +15,7 @@ const Hero = () => {
         <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px] mt-10">
           Use Now
         </button>
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:gap-8 gap-5 max-w-7xl h-24 lg:bottom-10 lg:px-0 px-5 mt-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:gap-8 gap-5 max-w-7xl  lg:bottom-10 lg:px-0 px-5 mt-20 pb-10">
           <div className="flex items-center gap-2">
             <p>
               <FaBug className="text-4xl" />
