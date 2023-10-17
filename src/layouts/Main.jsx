@@ -21,6 +21,7 @@ const Main = () => {
       oldScroll = window.pageYOffset;
     });
   }, []);
+
   return (
     <>
       <div

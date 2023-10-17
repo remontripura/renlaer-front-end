@@ -161,7 +161,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex gap-5">
             <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">
-              Login
+              <Link to="login">Login</Link>
             </button>
             <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">
               Sign Up
