@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../pages/shared/Navbar";
 import Footer from "../pages/shared/Footer";
 import { useEffect, useRef, useState } from "react";
-import ScrollToTop from "../components/ScrollToTop";
 
 const Main = () => {
   let navRef = useRef();
@@ -36,9 +35,6 @@ const Main = () => {
         <Outlet />
       </div>
       <Footer />
-      <div className={`fixed z-30 bottom-24 right-10 duration-500`}>
-        <ScrollToTop />
-      </div>
     </>
   );
 };

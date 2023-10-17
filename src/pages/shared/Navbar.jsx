@@ -164,7 +164,7 @@ const Navbar = () => {
               <Link to="login">Login</Link>
             </button>
             <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">
-              Sign Up
+              <Link to="register"> Sign Up</Link>
             </button>
           </div>
           <div

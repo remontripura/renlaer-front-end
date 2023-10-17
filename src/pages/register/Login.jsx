@@ -19,12 +19,7 @@ const Login = () => {
             <img className="w-32" src={iconImage} alt="" />
             </div>
             <div>
-              <h2 className="text-[24px] font-semibold">Hey, hello.</h2>
-              <p>
-                <small>
-                  Enter the information you entered while registering
-                </small>
-              </p>
+              <h2 className="text-[24px] font-bold">Log In</h2>
             </div>
             <div>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
@@ -48,7 +43,7 @@ const Login = () => {
                   </label>
                   <input
                     className="input-style focus:outline outline-1 focus:outline-[#6F81FF] focus:shadow-outline"
-                    type="text"
+                    type="password"
                     {...register("password")}
                     placeholder="Enter Your Password"
                   />
@@ -70,7 +65,7 @@ const Login = () => {
                 </button>
                 <div className="text-center">
                   Don’t have an account?{" "}
-                  <Link className="text-[#4A5BFF]">Sign up for free</Link>
+                  <Link className="text-[#4A5BFF]" to="/register">Sign up for free</Link>
                 </div>
               </form>
             </div>
