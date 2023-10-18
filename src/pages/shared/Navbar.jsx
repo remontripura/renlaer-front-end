@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
         <div className="absolute group -left-44 invisible lg:group-hover:visible opacity-100 top-20 duration-300 w-[700px]">
           <div className="w-5 h-5 bg-white rotate-45 absolute -top-2 left-48"></div>
-          <ul className="lg:grid grid-cols-3 max-w-[700px] p-8 gap-10 relative bg-white text-black">
+          <ul className="lg:grid grid-cols-3 max-w-[700px] p-8 gap-10 relative bg-white text-black rounded">
             {dropdown.map((data) => (
               <li className="shadow-md shadow-slate-300 p-3">
                 <Link to={data.to} className="font-bold hover:text-[#5177FF] text-[16px]">{data.title}</Link>
