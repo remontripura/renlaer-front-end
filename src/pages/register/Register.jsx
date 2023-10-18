@@ -1,8 +1,8 @@
 import React from "react";
-import loginImage from "../../assets/image/login.jpg";
 import iconImage from "../../assets/icon/logo.png";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { logo } from "../../components";
 
 const Register = () => {
   const { register, handleSubmit } = useForm();
@@ -12,7 +12,7 @@ const Register = () => {
       <div className="max-w-5xl rounded-md lg:mx-auto bg-[#fff] mx-5 shadow-md">
         <div className="flex gap-5 p-8">
           <div className="lg:w-1/2 hidden md:flex lg:flex">
-            <img className="w-full" src={loginImage} alt="" />
+            <img className="w-full" src={logo} alt="" />
           </div>
           <div className="lg:w-1/2 w-full p-5 bg-white space-y-8">
             <div>

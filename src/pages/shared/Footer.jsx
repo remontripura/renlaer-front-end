@@ -1,5 +1,6 @@
 import { FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
-import logo from '../../assets/icon/logo.svg'
+import { logo } from '../../components';
+
 const Footer = () => {
     return (
         <section className="bg-[#051A32] text-white">
@@ -7,7 +8,7 @@ const Footer = () => {
                 <footer className="footer lg:flex justify-between gap-2">
                     <aside className='space-y-8 lg:w-4/12'>
                         <div>
-                            <img src={logo} alt="" />
+                            <img className='w-32' src={logo} alt="" />
                         </div>
                         <div className='space-y-4'>
                             <p className='font-bold'>Sales: sales@renlaer.com</p>
