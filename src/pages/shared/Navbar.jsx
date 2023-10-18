@@ -33,18 +33,12 @@ const Navbar = () => {
           <ul className="lg:grid grid-cols-3 max-w-[700px] p-8 gap-10 relative bg-white text-black">
             {dropdown.map((data) => (
               <li className="shadow-md shadow-slate-300 p-3">
-                <p className="font-bold">{data.title}</p>
-                <p>{data.description}</p>
+                <Link to={data.to} className="font-bold hover:text-[#5177FF] text-[16px]">{data.title}</Link>
               </li>
             ))}
           </ul>
         </div>
         <FaAngleDown className="text-[20px] hidden lg:flex lg:group-hover:rotate-180 duration-500" />
-      </li>
-      <li className="">
-        <Link to="/product" className="list-style">
-          Scenario
-        </Link>
       </li>
       <li className="">
         <Link className="ancor-style" to="/aboutUs">
@@ -87,7 +81,7 @@ const Navbar = () => {
             <FaAngleUp className="text-[20px]" />
           )}
         </div>
-        <div className="absolute group left-80 invisible lg:group-hover:visible opacity-100 top-20">
+        {/* <div className="absolute group left-80 invisible lg:group-hover:visible opacity-100 top-20">
           <div className="w-6 h-6 bg-white rotate-45 absolute -top-3 left-48"></div>
           <ul className="lg:grid grid-cols-3 max-w-[700px] p-8 gap-10 relative bg-white text-black">
             {dropdown.map((data) => (
@@ -97,7 +91,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <FaAngleDown className="text-[20px] hidden lg:flex lg:group-hover:rotate-180 duration-500" />
       </li>
       {isOpen && (
@@ -105,24 +99,17 @@ const Navbar = () => {
           <ul className="lg:flex flex-col gap-10 relative bg-white text-black">
             {dropdown.map((data) => (
               <li className="shadow-md shadow-slate-300 p-3">
-                <p className="font-bold">{data.title}</p>
-                <p>{data.description}</p>
+                <Link to={data.to} className="font-bold hover:text-[#5177FF] text-[16px]">{data.title}</Link>
               </li>
             ))}
           </ul>
         </div>
       )}
       <li className="">
-        <Link to="/product" className="list-style">
-          Scenario
-        </Link>
-      </li>
-      <li className="">
         <Link className="ancor-style" to="/aboutUs">
           about Us
         </Link>
       </li>
-
       <li className="">
         <Link className="ancor-style" to="/contactUs">
           Contact Us
@@ -141,7 +128,7 @@ const Navbar = () => {
       <div className="lg:max-w-7xl mx-auto flex justify-between items-center px-4 text-white py-5">
         <div className="">
           <Link to="/">
-            <img className="w-24" src={logo} alt="" />
+            <img className="w-28" src={logo} alt="" />
           </Link>
         </div>
         <nav>
@@ -174,6 +161,14 @@ const Navbar = () => {
           >
             <ul className="lg:hidden flex flex-col justify-center items-center gap-8 w-full py-5 mx-3">
               {dropdownItem}
+              <div className="lg:hidden flex gap-5">
+              <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">
+                <Link to="login">Login</Link>
+              </button>
+              <button className="bg-[#5177FF] py-2 rounded font-semibold text-white hover:bg-[#1a4bff] w-[100px]">
+                <Link to="register"> Sign Up</Link>
+              </button>
+            </div>
             </ul>
           </div>
         </div>

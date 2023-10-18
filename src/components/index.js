@@ -1,4 +1,4 @@
-import logo from '../assets/icon/logo.svg';
+import logo from '../assets/icon/logo.png';
 
 export {
     logo
@@ -7,32 +7,32 @@ export {
 export const dropdown = [
     {
         id: "001",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "Private Proxies",
+        to: "privateProxies"
     },
     {
         id: "002",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "Residential Proxies",
+        to:"Residential"
     },
     {
         id: "003",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "Static Residential",
+        to:"staticResidential"
     },
     {
         id: "004",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "Residential Rotating",
+        to:"residentialRotating"
     },
     {
         id: "005",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "SOCKS5 Proxies",
+        to:"socks"
     },
     {
         id: "006",
-        title: "Hi I am Alex",
-        description: "may suggest strong and clearly marked similarity throughout the items included"
+        title: "VPS",
+        to: "vps"
     },
 ]
