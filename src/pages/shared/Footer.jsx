@@ -11,13 +11,13 @@ const Footer = () => {
                             <img className='w-32' src={logo} alt="" />
                         </div>
                         <div className='space-y-4'>
-                            <p className='font-bold'>Sales: sales@renlaer.com</p>
-                            <p className='font-bold'>Support: sales@renlaer.com</p>
-                            <p className='font-bold'>Cooperate: sales@renlaer.com</p>
+                            <p className='font-bold'>Sales: sales@proxylife.com</p>
+                            <p className='font-bold'>Support: sales@proxylife.com</p>
+                            <p className='font-bold'>Cooperate: sales@proxylife.com</p>
                         </div>
                         <div>
                             <p>
-                                Renlaer makes it easy for everyone to use, mine, and explore the mysteries of data.
+                                proxylife makes it easy for everyone to use, mine, and explore the mysteries of data.
                             </p>
                             <div className='flex gap-3 items-center'>
                                 <span>Follow Us</span>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </footer>
             </div>
             <div className='border-t-[1px] border-white'>
-                <p className='max-w-7xl mx-auto pl-10 pt-2 text-[12px]'>© 2023 Renlaer.com. All right reserved.</p>
+                <p className='max-w-7xl mx-auto pl-10 pt-2 text-[12px]'>© 2023 proxylife.com. All right reserved.</p>
             </div>
         </section>
     );

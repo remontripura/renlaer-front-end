@@ -7,7 +7,7 @@ const Products = () => {
     return (
         <section className="mt-20 max-w-7xl mx-auto">
             <div className="max-w-5xl mx-auto text-center">
-                <h2 className="text-3xl font-bold">Popular <span className="text-[#5177FF]">products</span> of renlaer</h2>
+                <h2 className="text-3xl font-bold">Popular <span className="text-[#5177FF]">products</span> of ProxyLife</h2>
                 <p>Flexible selection according to business needs</p>
             </div>
             <div className="grid md:grid-cols-3 gap-10 mt-5">
