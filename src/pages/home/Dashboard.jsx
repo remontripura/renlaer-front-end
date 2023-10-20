@@ -1,5 +1,6 @@
-import dashboardImage from '../../assets/image/dashboard.jpg';
+
 import { PiRadioButtonFill } from "react-icons/pi";
+import { image1, image2, image3 } from '../../components';
 const Dashboard = () => {
     return (
         <section className='bg-white'>
@@ -28,12 +29,12 @@ const Dashboard = () => {
                         </ul>
                     </div>
                     <div>
-                        <img src={dashboardImage} alt="" />
+                        <img className="w-full rounded" src={image1} alt="" />
                     </div>
                 </div>
                 <div className="lg:grid grid-cols-2 gap-5 mb-10">
                     <div>
-                        <img src={dashboardImage} alt="" />
+                        <img className="w-full rounded" src={image2} alt="" />
                     </div>
                     <div className='flex flex-col justify-center lg:p-14 space-y-5'>
                         <h2 className='font-bold text-4xl'>More than 30 million Residential Proxy pools worldwide</h2>
@@ -46,7 +47,7 @@ const Dashboard = () => {
                         <p className=' leading-10 text-slate-500'>Use faster and more stable proxy services to capture data, save thousands of costs for enterprises, and provide them with data collection for analysis, so as to promote the development of global enterprise data business.</p>
                     </div>
                     <div>
-                        <img src={dashboardImage} alt="" />
+                        <img className="w-full rounded" src={image3} alt="" />
                     </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
-import worldwideimage from '../../assets/image/worldwide.png';
+
+import { flag } from '../../components';
 
 
 const WorldWide = () => {
@@ -11,7 +12,7 @@ const WorldWide = () => {
                         <p className=' text-slate-500 text-[12px]'>Reliable Residential Proxies available in 190+ countries worldwide.And we are constantly adding new locations.</p>
                     </div>
                     <div>
-                        <img src={worldwideimage} alt="" />
+                        <img src={flag} alt="" />
                     </div>
                 </div>
             </div>
